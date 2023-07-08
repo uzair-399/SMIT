@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Form</title>
+    <style>
+         *{
+    background-color: #6B59D3;
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    background-color: white;
+    height: 600px;
+    margin-top: 8%;
+    width: 50%;
+    margin-left: 25%;
+}
+.head{
+    background-color: white;
+    height: 150px;
+    width: 50%;
+    margin-left: 25%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    grid-auto-flow: column;
+    
+}
+.circle{
+    background-color: #C0C0C0;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4px;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    
+}
+#circle_1{
+    background-color: #6B59D3;
+    color: white;
+}
+#circle_2{
+    background-color: #6B59D3;
+    color: white;
+}
+hr{
+    rotate: 90deg;
+    margin: 0%;
+    padding: 0%;
+    background-color: #6B59D3;
+    width: 2px;
+}
+h1{
+   
+   background-color: white;
+   text-align: center;
+   margin-bottom: 30px;
+}
+form{
+    background-color: white;
+    color: #C0C0C0;
+    
+  align-items: center;
+  justify-content: center;
+}
+label{
+    background-color: white;
+    margin-left: 150px;
+    
+}
+input{
+    background-color: white;
+    margin-left: 150px;
+    height: 30px;
+    width: 50%;
+    margin-top: 5px;
+    border-color: #C0C0C0;
+    border-radius: 5px;
+    
+}
+#submit{
+    background-color: #6B59D3;
+    border: 0ch;
+    color: white;
+    width: 80px;
+    height: 40px;
+    margin-left: 160px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+button{
+    background-color: #C0C0C0;
+    color: white;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    border: 0ch;
+    border-radius: 5px;
+    margin-left: 150px;
+    margin-top: 30px;
+    display: inline-block;
+}.link{
+    background: none;
+    text-decoration: none;
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <div class="circle" id="circle_1">1</div>
+            <hr id="hr1">
+            <div class="circle" id="circle_2">2</div>
+            <hr id="hr2">
+            <div class="circle" id="circle_3">3</div>
+        </div>
+        <h1>PERSONAL INFO</h1>
+        <form action="form3.html">
+            <label for="UserName">User Name</label><br>
+            <input type="text" id="User_Name" name="User Name"><br>
+            <br>
+            <label for="FName">First Name</label><br>
+            
+            <input type="text" id="First_Name" name="First Name"><br>
+            <br>
+            <label for="LName">Last Name</label><br>
+            
+            <input type="text" id="First_Name" name="First Name"><br>
+            <button><a class="link" href="form1.html">Back &#8592;</a></button>
+            <input type="submit" id="submit" value="Next &#8594;">
+            
+        </form>
+        
+    </div>
+</body>

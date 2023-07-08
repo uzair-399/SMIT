@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Form</title>
+    <style>
+        *{
+    background-color: #6B59D3;
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    background-color: white;
+    height: 600px;
+    margin-top: 8%;
+    width: 50%;
+    margin-left: 25%;
+}
+.head{
+    background-color: white;
+    height: 150px;
+    width: 50%;
+    margin-left: 25%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    grid-auto-flow: column;
+    
+}
+.circle{
+    background-color: #C0C0C0;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4px;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    
+}
+#circle_1{
+    background-color: #6B59D3;
+    color: white;
+}
+#hr1{
+    rotate: 90deg;
+    margin: 0%;
+    padding: 0%;
+    background-color: #6B59D3;
+    width: 2px;
+}
+#hr2{
+    rotate: 90deg;
+    background-color: #C0C0C0;
+    width: 2px;
+}
+h1{
+   
+   background-color: white;
+   text-align: center;
+   margin-bottom: 30px;
+}
+form{
+    background-color: white;
+    color: #C0C0C0;
+    
+  align-items: center;
+  justify-content: center;
+}
+label{
+    background-color: white;
+    margin-left: 150px;
+    
+}
+input{
+    background-color: white;
+    margin-left: 150px;
+    height: 30px;
+    width: 50%;
+    margin-top: 5px;
+    border-color: #C0C0C0;
+    border-radius: 5px;
+    
+}
+#submit{
+    background-color: #6B59D3;
+    border: 0ch;
+    color: white;
+    width: 80px;
+    height: 40px;
+    margin-left: 61.5%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <div class="circle" id="circle_1">1</div>
+            <hr id="hr1">
+            <div class="circle" id="circle_2">2</div>
+            <hr id="hr2">
+            <div class="circle" id="circle_3">3</div>
+        </div>
+        <h1>SIGNUP INFO</h1>
+        <form action="form2.html">
+            <label for="mail">Email Address</label><br>
+            <input type="text" id="mail" name="mail"><br>
+            <br>
+            <label for="password">Password</label><br>
+            
+            <input type="text" id="password" name="password"><br>
+            <br>
+            <label for="password">Confirm Password</label><br>
+            
+            <input type="text" id="confirmpassword" name="Confirm Password"><br>
+            <input type="submit" id="submit" value="Next &#8594;">
+
+        </form>
+    </div>
+</body>
